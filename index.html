@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Javier Murcia — Ingeniero de Sistemas. Cloud, virtualización, bases de datos y automatización. Servicios remotos." />
+  <title>Javier Murcia · Ingeniero de Sistemas</title>
+
+  <!-- Open Graph (tarjetas bonitas al compartir en redes) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Javier Murcia · Ingeniero de Sistemas" />
+  <meta property="og:title" content="Javier Murcia · Ingeniero de Sistemas" />
+  <meta property="og:description" content="Cloud, virtualización, bases de datos y automatización. Servicios remotos — 100% disponible." />
+  <meta property="og:url" content="https://javiermurcia.github.io/landing-javier/" />
+  <meta property="og:image" content="https://javiermurcia.github.io/landing-javier/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Javier Murcia · Ingeniero de Sistemas" />
+  <meta name="twitter:description" content="Cloud, virtualización, bases de datos y automatización. Servicios remotos." />
+  <meta name="twitter:image" content="https://javiermurcia.github.io/landing-javier/assets/og-image.png" />
+
+  <!-- Tipografía: Space Grotesk (títulos) + Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰️</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Fondo decorativo animado ===== -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ===== Barra de progreso de scroll ===== -->
+  <div class="progress" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <span class="nav-logo-dot"></span>
+        <span>JM</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+        <a href="#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="#sobre-mi" data-i18n="nav.sobre">Sobre mí</a>
+        <a href="#proceso" data-i18n="nav.proceso">Proceso</a>
+        <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">EN</button>
+        <button class="nav-burger" id="navBurger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge" data-i18n="hero.badge">Ingeniero de Sistemas · Remoto</span>
+          <h1 class="hero-title">
+            <span data-i18n="hero.hola">Hola, soy</span>
+            <span class="hero-name">Javier Murcia</span>
+          </h1>
+          <p class="hero-rot">
+            <span data-i18n="hero.rot.pre">Ingeniero de sistemas especializado en</span>
+            <span class="rotating" id="rotating" data-i18n-words="hero.rot.words">Cloud</span>
+          </p>
+          <p class="hero-sub" data-i18n="hero.sub">
+            Cloud, virtualización y automatización de bases de datos. Convierto infraestructura
+            compleja en sistemas simples, seguros y escalables — 100% remoto.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/javier-murcia-l/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              <span data-i18n="hero.cta">Contáctame en LinkedIn</span>
+            </a>
+            <a class="btn btn-ghost" href="#servicios" data-i18n="hero.cta2">Ver servicios</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>0-2</strong>
+              <span data-i18n="hero.stat1l">años de experiencia</span>
+            </div>
+            <div class="stat">
+              <strong><span class="count" data-count="100" data-suffix="%">0</span></strong>
+              <span data-i18n="hero.stat2l">trabajo remoto</span>
+            </div>
+            <div class="stat">
+              <strong><span class="count" data-count="2" data-suffix="">0</span></strong>
+              <span data-i18n="hero.stat3l">áreas de especialidad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual: terminal + badges flotantes -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+              <span class="terminal-title">javier@infra:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">javier-murcia · systems-engineer</p>
+              <p><span class="t-prompt">$</span> docker ps</p>
+              <p class="t-out">CONTAINER · IMAGE · STATUS</p>
+              <p class="t-out">a1b2c3 · nginx · Up (healthy)</p>
+              <p><span class="t-prompt">$</span> psql --version</p>
+              <p class="t-out">PostgreSQL 16.4</p>
+              <p><span class="t-prompt">$</span> status --remote</p>
+              <p class="t-out t-ok">✓ 100% remote · disponible</p>
+              <p><span class="t-prompt">$</span> <span class="cursor"></span></p>
+            </div>
+          </div>
+          <span class="float-chip fc-1">AWS</span>
+          <span class="float-chip fc-2">Docker</span>
+          <span class="float-chip fc-3">PostgreSQL</span>
+          <span class="float-chip fc-4">Linux</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Servicios ===== -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow" data-i18n="serv.eyebrow">Lo que hago</span>
+          <h2 class="section-title" data-i18n="serv.title">Servicios</h2>
+          <p class="section-sub" data-i18n="serv.sub">
+            Soluciones de infraestructura y datos, diseñadas para crecer contigo.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .42-8.98 7 7 0 0 0-13.6 1.9A4 4 0 0 0 6 19h11.5z"/><path d="M8.5 16l3.5-3.5L15.5 16"/><path d="M12 12.5V19"/></svg>
+            </div>
+            <h3 data-i18n="serv.cloud.t">Cloud y virtualización</h3>
+            <p data-i18n="serv.cloud.d">
+              Infraestructura en AWS, Azure y GCP: migraciones a la nube, gestión de máquinas
+              virtuales y VPS con foco en rendimiento, seguridad y ahorro de costos.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+            </div>
+            <h3 data-i18n="serv.db.t">Bases de datos</h3>
+            <p data-i18n="serv.db.d">
+              Administración de PostgreSQL y MySQL: diseño de esquemas, optimización de consultas,
+              backups automáticos y recuperación ante desastres.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 data-i18n="serv.auto.t">Automatización</h3>
+            <p data-i18n="serv.auto.d">
+              Scripts en Python y Bash que eliminan tareas repetitivas: despliegues, monitoreo,
+              reportes y procesos programados que trabajan solos.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M6 16h.01M10 16h.01"/></svg>
+            </div>
+            <h3 data-i18n="serv.cont.t">Contenedores (Docker)</h3>
+            <p data-i18n="serv.cont.d">
+              Entornos con Docker para desarrollo y producción: infraestructura reproducible,
+              portátil y fácil de escalar, lista para crecer sin fricción.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg>
+            </div>
+            <h3 data-i18n="serv.sop.t">Soporte y mantenimiento</h3>
+            <p data-i18n="serv.sop.d">
+              Monitoreo proactivo, actualizaciones y resolución de incidentes para que tus
+              sistemas se mantengan estables, disponibles y con el mejor rendimiento.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 data-i18n="serv.seg.t">Seguridad y backups</h3>
+            <p data-i18n="serv.seg.d">
+              Copias de seguridad automáticas, políticas de recuperación y buenas prácticas de
+              seguridad para proteger tus datos antes de que ocurra un problema.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre mí ===== -->
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow" data-i18n="about.eyebrow">Quién soy</span>
+          <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about.p1">
+              Soy Javier Murcia, ingeniero de sistemas con enfoque en cloud, virtualización,
+              bases de datos y automatización. Me apasiona convertir problemas técnicos
+              complejos en soluciones simples, documentadas y escalables.
+            </p>
+            <p data-i18n="about.p2">
+              Trabajo 100% remoto y de forma pragmática: diagnostico, propongo y ejecuto.
+              Creo en la automatización como la mejor inversión — todo lo repetitivo debería
+              hacerse una sola vez, y luego funcionar solo.
+            </p>
+            <div class="about-points">
+              <span data-i18n="about.pt1">🔧 Enfoque en soluciones, no en parches</span>
+              <span data-i18n="about.pt2">📈 Aprendizaje continuo de tecnologías nuevas</span>
+              <span data-i18n="about.pt3">🤝 Comunicación clara y cercana</span>
+            </div>
+          </div>
+          <div class="about-stack glass">
+            <h3 data-i18n="about.stack">Tecnologías con las que trabajo</h3>
+            <div class="chips">
+              <span class="chip">AWS</span>
+              <span class="chip">Azure</span>
+              <span class="chip">GCP</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Nginx</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">Python</span>
+              <span class="chip">Bash</span>
+              <span class="chip">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Proceso ===== -->
+    <section id="proceso" class="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow" data-i18n="proc.eyebrow">Cómo trabajo</span>
+          <h2 class="section-title" data-i18n="proc.title">Proceso</h2>
+          <p class="section-sub" data-i18n="proc.sub">
+            Un método claro de principio a fin, para que sepas qué esperar en cada paso.
+          </p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-num">01</span>
+            <h3 data-i18n="proc.s1t">Diagnóstico</h3>
+            <p data-i18n="proc.s1d">Analizo tu infraestructura y procesos actuales para entender qué funciona y qué frena.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">02</span>
+            <h3 data-i18n="proc.s2t">Diseño</h3>
+            <p data-i18n="proc.s2d">Propongo la solución más adecuada: arquitectura, herramientas y plan de implementación.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">03</span>
+            <h3 data-i18n="proc.s3t">Implementación</h3>
+            <p data-i18n="proc.s3d">Pongo en marcha la solución con pruebas, documentación y sin interrumpir tu operación.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">04</span>
+            <h3 data-i18n="proc.s4t">Soporte</h3>
+            <p data-i18n="proc.s4d">Acompaño el resultado con monitoreo, mejoras continuas y respuesta ante incidentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA final ===== -->
+    <section id="contacto" class="cta">
+      <div class="container">
+        <div class="cta-card glass reveal">
+          <h2 class="cta-title" data-i18n="cta.title">¿Hablamos de tu proyecto?</h2>
+          <p class="cta-sub" data-i18n="cta.sub">
+            Cuéntame qué necesitas — te respondo con una propuesta clara, sin compromiso.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/javier-murcia-l/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              <span data-i18n="cta.btn">Contáctame en LinkedIn</span>
+            </a>
+          </div>
+          <p class="cta-note" data-i18n="cta.note">100% remoto · Respuesta rápida</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> <span data-i18n="foot.name">Javier Murcia</span> · <span data-i18n="foot.role">Ingeniero de Sistemas</span></p>
+      <div class="footer-links">
+        <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+        <a href="#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="#sobre-mi" data-i18n="nav.sobre">Sobre mí</a>
+        <a href="https://www.linkedin.com/in/javier-murcia-l/" target="_blank" rel="noopener" class="footer-link">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Botón volver arriba ===== -->
+  <button class="back-top" id="backTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
